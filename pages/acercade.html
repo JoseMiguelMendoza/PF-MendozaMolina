@@ -7,33 +7,51 @@
     <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="shortcut icon" href="../assets/images/ramo.jfif" type="image/x-icon">
-    <title>Novedades del día</title>
+    <title>Acerca de nosotros</title>
 </head>
 <body>
     <div class="gridContainerAD container container-lg container-md container-sm flexContent">
         <picture class="imagen">
             <img class="headerImagen" src="../assets/images/prado2.png" alt="Prado con flores">
         </picture>
-        <header class="navi">
-            <nav class="navbar navbar-expand-lg navList container-fluid">
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse navList" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="navItem navLink" href="../index.html">Home</a>
-                        <a class="navItem navLink pagActual" href="../pages/acercade.html">Acerca de</a>
-                        <a class="navItem navLink" href="../pages/precios.html">Precios</a>
-                        <a class="navItem navLink" href="../pages/sucursales.html">Sucursales</a>
-                        <a class="navItem navLink" href="../pages/contacto.html">Contacto</a>
+        <header class="navi barraAnim">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navList">
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
-                </div>
-            </nav>
+                    <div class="collapse navbar-collapse navList" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="navItem nav-link navLink pagActual" aria-current="page" href="../index.html">Home</a>
+                            <a class="navItem nav-link navLink" href="../pages/acercade.html">Acerca de</a>
+                            <a class="navItem nav-link navLink" href="../pages/precios.html">Precios</a>
+                            <a class="navItem nav-link navLink" href="../pages/sucursales.html">Sucursales</a>
+                            <a class="navItem nav-link navLink" href="../pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
 
-        <section class="contenido sect1">
+        <section class="contenido sect1 line">
+            <article class="articulo flipY">
+                <div class="contenidoArticulo">
+                    <div class="line">
+                        <h1 class="contenidoArticuloTitulo flipX">Historia</h1>
+                        <p class="contenidoParrafo flipX">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in ipsam omnis quasi. Id tempora illum cumque, autem voluptatem numquam recusandae incidunt quibusdam similique, officiis dolor quaerat obcaecati, dicta commodi?
+                        Totam odit sit tenetur ipsa nobis, neque hic ut quisquam? Voluptatem quod quaerat totam illum, sapiente expedita nisi omnis alias iste quia? Error consectetur quod quasi rem sint, quibusdam dolore?
+                        Eos itaque tempore, accusamus et quod ea aliquam dolores, corporis voluptas soluta officiis veritatis cupiditate magni illo, nostrum aperiam. Sed eum dolore dolorum iusto, repudiandae debitis sint adipisci ex illum?</p>
+                    </div>
+                    <picture>
+                        <img class="menuImagenes flipX" src="../assets/images/floreshistoria.jpg" alt="Florería">
+                    </picture>
+                </div>
+            </article>
+        </section>
+
+        <!-- <section class="contenido sect1">
             <article class="articulo">
                 <div class="contenidoArticulo">
                     <div>
@@ -47,9 +65,25 @@
                     </picture>
                 </div>
             </article>
+        </section> -->
+
+        <section class="contenido sect2 line">
+            <article class="articulo flipY">
+                <div class="contenidoArticulo">
+                    <div class="line">
+                        <h2 class="contenidoArticuloTitulo flipX">¿Porque deberías recomendarnos?</h2>
+                        <p class="contenidoParrafo flipX">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in ipsam omnis quasi. Id tempora illum cumque, autem voluptatem numquam recusandae incidunt quibusdam similique, officiis dolor quaerat obcaecati, dicta commodi?
+                        Totam odit sit tenetur ipsa nobis, neque hic ut quisquam? Voluptatem quod quaerat totam illum, sapiente expedita nisi omnis alias iste quia? Error consectetur quod quasi rem sint, quibusdam dolore?
+                        Eos itaque tempore, accusamus et quod ea aliquam dolores, corporis voluptas soluta officiis veritatis cupiditate magni illo, nostrum aperiam. Sed eum dolore dolorum iusto, repudiandae debitis sint adipisci ex illum?</p>
+                    </div>
+                    <picture> 
+                        <img class="menuImagenes flipX" src="../assets/images/floresrecomend.jfif" alt="Florería2">
+                    </picture>
+                </div>
+            </article>
         </section>
 
-        <section class="contenido sect2">
+        <!-- <section class="contenido sect2">
             <article class="articulo">
                 <div class="contenidoArticulo">
                     <div>
@@ -58,14 +92,30 @@
                         Totam odit sit tenetur ipsa nobis, neque hic ut quisquam? Voluptatem quod quaerat totam illum, sapiente expedita nisi omnis alias iste quia? Error consectetur quod quasi rem sint, quibusdam dolore?
                         Eos itaque tempore, accusamus et quod ea aliquam dolores, corporis voluptas soluta officiis veritatis cupiditate magni illo, nostrum aperiam. Sed eum dolore dolorum iusto, repudiandae debitis sint adipisci ex illum?</p>
                     </div>
-                    <picture> <!--Se recomienda que al colocar una imagen, se use la etiqueta picture.-->
+                    <picture>
                         <img class="menuImagenes" src="../assets/images/floresrecomend.jfif" alt="Florería2">
+                    </picture>
+                </div>
+            </article>
+        </section> -->
+
+        <section class="contenido sect3 line">
+            <article class="articulo flipY">
+                <div class="contenidoArticulo">
+                    <div class="line">
+                        <h3 class="contenidoArticuloTitulo flipX">Misión y visión</h3>
+                        <p class="contenidoParrafo flipX">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in ipsam omnis quasi. Id tempora illum cumque, autem voluptatem numquam recusandae incidunt quibusdam similique, officiis dolor quaerat obcaecati, dicta commodi?
+                        Totam odit sit tenetur ipsa nobis, neque hic ut quisquam? Voluptatem quod quaerat totam illum, sapiente expedita nisi omnis alias iste quia? Error consectetur quod quasi rem sint, quibusdam dolore?
+                        Eos itaque tempore, accusamus et quod ea aliquam dolores, corporis voluptas soluta officiis veritatis cupiditate magni illo, nostrum aperiam. Sed eum dolore dolorum iusto, repudiandae debitis sint adipisci ex illum?</p>
+                    </div>
+                    <picture> 
+                        <img class="menuImagenes flipX" src="../assets/images/floresmyv.jfif" alt="Florería3">
                     </picture>
                 </div>
             </article>
         </section>
 
-        <section class="contenido sect3">
+        <!-- <section class="contenido sect3">
             <article class="articulo">
                 <div class="contenidoArticulo">
                     <div>
@@ -74,12 +124,12 @@
                         Totam odit sit tenetur ipsa nobis, neque hic ut quisquam? Voluptatem quod quaerat totam illum, sapiente expedita nisi omnis alias iste quia? Error consectetur quod quasi rem sint, quibusdam dolore?
                         Eos itaque tempore, accusamus et quod ea aliquam dolores, corporis voluptas soluta officiis veritatis cupiditate magni illo, nostrum aperiam. Sed eum dolore dolorum iusto, repudiandae debitis sint adipisci ex illum?</p>
                     </div>
-                    <picture> <!--Se recomienda que al colocar una imagen, se use la etiqueta picture.-->
+                    <picture> 
                         <img class="menuImagenes" src="../assets/images/floresmyv.jfif" alt="Florería3">
                     </picture>
                 </div>
             </article>
-        </section>
+        </section> -->
 
         <footer class="footer foot">
             <p class="footerTexto">¡Gracias por visitarnos!</p>
