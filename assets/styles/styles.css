@@ -5,7 +5,7 @@ body{
     font-family: 'Alkalami', sans-serif;
 }
 
-*{ /* Este es un selector universal */
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,10 +34,6 @@ a{ /* Estilo general de los links */
 .navbar{
     --bs-navbar-padding-y: 0px;
 }
-
-/* .navbar .container-fluid{
-    background-color:  rgb(74, 132, 134);
-} */
 
 .navbar-toggler {
     margin-top: 0px;
