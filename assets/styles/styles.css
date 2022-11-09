@@ -17,27 +17,35 @@ a{ /* Estilo general de los links */
 }
 
 /*-----MENÚ------*/
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+}
 
 .headerImagen{
     width: 100%;
     object-fit: cover;
 }
 
+.navbar{
+    --bs-navbar-padding-y: 0px;
+}
 
 .navList{
+    height: 60px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgb(74, 132, 134);
 }
 
 .navItem{
     display: inline-block;
+    margin: 0px 50px;
 }
 
 .navLink{
     color: wheat;
     display: inline-block;
-    padding: 20px;
+    padding: 2px;
 }
 
 .navItem:hover{
@@ -95,6 +103,7 @@ a{ /* Estilo general de los links */
 
 .lineUp {
     animation: 2s anim-lineUp ease-out;
+    margin-bottom: 0px;
 }
 @keyframes anim-lineUp {
     0% {
@@ -130,8 +139,10 @@ font-size: 2rem;
 
 @media screen and (max-width: 576px){
 
-/*-----INDEX-----*/
-
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0rem;
+    }
+    
     .gridContainer{
         grid-template-areas: 
         "imagen imagen imagen imagen imagen"
@@ -162,7 +173,7 @@ font-size: 2rem;
         grid-area: foot;
     }
 
-/*-----ACERCA DE-----*/
+
 
     .gridContainerAD{
         grid-template-areas: 
@@ -217,7 +228,10 @@ font-size: 2rem;
 
 @media screen and (min-width: 577px) {
 
-/*-----INDEX-----*/
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0rem;
+    }
+    
     .gridContainer{
         grid-template-areas: 
         "imagen imagen imagen imagen imagen"
@@ -247,8 +261,6 @@ font-size: 2rem;
     .foot{
         grid-area: foot;
     }
-
-/*-----ACERCA DE-----*/
 
     .gridContainerAD{
         grid-template-areas: 
@@ -321,7 +333,7 @@ font-size: 2rem;
     width: 100%;
     background-color: rgb(74, 132, 134);
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .footerTexto{
