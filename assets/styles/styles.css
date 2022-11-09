@@ -30,11 +30,18 @@ a{ /* Estilo general de los links */
     object-fit: cover;
 }
 
+
 .navbar{
     --bs-navbar-padding-y: 0px;
 }
 
+/* .navbar .container-fluid{
+    background-color:  rgb(74, 132, 134);
+} */
+
 .navbar-toggler {
+    margin-top: 0px;
+    margin-left: 5px;
     width: 100px;
 }
 
@@ -79,10 +86,10 @@ a{ /* Estilo general de los links */
     padding: 4rem;
     background-color: rgb(74, 132, 134);
 }
-/* Animacion hover para navegador */
+/* Animacion hover para items del navegador */
 .barraAnim {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -229,10 +236,10 @@ a{ /* Estilo general de los links */
 
 
 .contenidoArticuloTitulo{
-font-size: 2rem;
+    font-size: 2rem;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width:576px){
 
     /*-----INDEX-----*/
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
