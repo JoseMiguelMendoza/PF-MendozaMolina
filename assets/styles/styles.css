@@ -30,6 +30,10 @@ a{ /* Estilo general de los links */
     --bs-navbar-padding-y: 0px;
 }
 
+.navbar-toggler {
+    width: 100px;
+}
+
 .navList{
     height: 60px;
     display: flex;
@@ -104,6 +108,10 @@ a{ /* Estilo general de los links */
 .lineUp {
     animation: 2s anim-lineUp ease-out;
     margin-bottom: 0px;
+}
+
+.subtitulo{
+    font-style: italic;
 }
 @keyframes anim-lineUp {
     0% {
@@ -226,7 +234,7 @@ font-size: 2rem;
 
 }
 
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 1200px) {
 
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         --bs-gutter-x: 0rem;
