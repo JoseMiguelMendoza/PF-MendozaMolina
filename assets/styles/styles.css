@@ -16,7 +16,7 @@ a{ /* Estilo general de los links */
     text-decoration: none;
 }
 
-/*-----MENÚ------*/
+/*-----HEADER/FOOTER------*/
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 0rem;
 }
@@ -58,6 +58,19 @@ a{ /* Estilo general de los links */
 
 .pagActual{
     color: rgb(52, 29, 73);
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(74, 132, 134);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.footerTexto{
+    text-align: center;
+    padding: 4rem;
+    background-color: rgb(74, 132, 134);
 }
 
 /*-----INDEX-----*/
@@ -234,7 +247,7 @@ font-size: 2rem;
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 577px) {
 
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         --bs-gutter-x: 0rem;
@@ -330,25 +343,10 @@ font-size: 2rem;
     width: 560px;
 }
 
-
-
 .gridContainerAD{
     display: grid;
 }
 
-/*-----FOOTER-----*/
-.footer{
-    width: 100%;
-    background-color: rgb(74, 132, 134);
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
-.footerTexto{
-    text-align: center;
-    padding: 4rem;
-    background-color: rgb(74, 132, 134);
-}
 
 /*-----CONTACTO-----*/
 
