@@ -318,9 +318,10 @@ a{ /* Estilo general de los links */
     
     .menuImagenes{
         display: flex;
+        flex-wrap: wrap;
         object-fit: cover;
         height: 200px;
-        width: 400px;
+        width: 100%;
         border-radius: 50px;
     }
 
