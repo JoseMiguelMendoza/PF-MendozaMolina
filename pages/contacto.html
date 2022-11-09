@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="shortcut icon" href="../assets/images/ramo.jfif" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <picture>
+                <img class="headerImagen" src="../assets/images/prado2.png" alt="Prado con flores">
+            </picture>
+            <nav class="nav">
+                <ul class="navList">
+                    <li class="navItem"><a class="navLink" href="../index.html">Home</a></li>
+                    <li class="navItem"><a class="navLink" href="../pages/acercade.html">Acerca de</a></li>
+                    <li class="navItem"><a class="navLink" href="../pages/precios.html">Precios</a></li>
+                    <li class="navItem"><a class="navLink" href="../pages/sucursales.html">Sucursales</a></li>
+                    <li class="navItem"><a class="navLink pagActual" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form class="contactoFormulario" action="" method="post" enctype="text/plain">
+            <fieldset class="contactoCaja">
+                <legend class="contactoLegend">¡Contáctanos!</legend>
+                <div>
+                    <label class="contactoLabel" for="nombres">Nombres: </label>
+                    <input class="contactoInput" type="text" name="nombres" id="nombres" placeholder=" Ingrese su nombre/s">
+                </div>
+                <div>
+                    <label class="contactoLabel" for="primerApellido">Primer apellido: </label>
+                    <input class="contactoInput" type="text" name="primerApellido" id="primerApellido" placeholder=" Ingrese su primer apellido">
+                </div>
+                <div>
+                    <label class="contactoLabel" for="segundoApellido">Segundo apellido: </label>
+                    <input class="contactoInput" type="text" name="segundoApellido" id="segundoApellido" placeholder=" Ingrese su segundo apellido">
+                </div>
+                <div>
+                    <label class="contactoLabel" for="masculino">Sexo: Masculino</label>
+                    <input type="radio" name="sexo" id="sexo" value="sexo">
+                    <label class="contactoLabel" for="femenino"> Fememino</label>
+                    <input type="radio" name="sexo" id="sexo" value="sexo">
+                </div>
+                <div>
+                    <label class="contactoLabel" for="email">E-mail: </label>
+                    <input class="contactoInput" type="email" name="email" id="email" placeholder=" Ingrese correo eléctronico">
+                </div>
+                <div>
+                    <label class="contactoLabel" for="telefono">Número de celular: </label>
+                    <input class="contactoInput" type="number" name="numcelular" id="numcelular" placeholder=" Ingresar número">
+                </div>
+                <div>
+                    <label class="contactoLabel" for="pais">Provincia: </label>
+                    <select class="contactoInput" name="pais" id="pais">
+                        <option value="none"></option>
+                        <option value="buenosaires">Buenos Aires</option>
+                        <option value="santafe">Santa Fe</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="sanjuan">San Juan</option>
+                        <option value="chaco">Chaco</option>
+                        <option value="sanluis">San luis</option>
+                        <option value="formosa">Formosa</option>
+                        <option value="santacruz">Santa Cruz</option>
+                        <option value="rionegro">Rio Negro</option>
+                        <option value="santiagodelestero">Santiago del Estero</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="contactoLabel contactoAsunto" for="asunto">Asunto: </label>
+                    <div>
+                    <textarea class="contactoAsuntoText" name="asunto" id="asunto" cols="30" rows="10" placeholder="  Ingrese el asunto por el cual nos contacta"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button class="button" >Enviar</button><!-- <input type="submit"> -->
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footerTexto">¡Gracias por visitarnos!</p>
+    </footer>
+</body>
+</html>
