@@ -52,12 +52,67 @@ a{ /* Estilo general de los links */
 
 .flexContent{
     display: flex;
+    flex-direction: column;
 }
 
 .gridContainer{
     display: grid;
 }
 
+/* Animacion para titulo principal */
+
+.bienvenida{
+    position: relative;
+    font-size: 40px;
+}
+.bienvenida span {
+    font-family: 'Alkalami', sans-serif;
+    position: relative;
+    display: inline-block;
+    color: rgb(39, 39, 39);
+    text-transform: none;
+    animation: bienvenida 1.5s;
+    animation-delay: calc(.1s * var(--i));
+    
+}
+
+@keyframes bienvenida {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-20px)
+    }
+}
+
+/* Animacion para texto */
+
+.line {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+    0% {
+    opacity: 0;
+    transform: translateY(80%);
+    }
+    20% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    transform: translateY(0%);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0%);
+    }
+}
 .contenido{
     display: flex;
     justify-content: center;
