@@ -235,10 +235,6 @@ a{ /* Estilo general de los links */
     }
 
     /*-----INDEX-----*/
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        --bs-gutter-x: 0rem;
-    }
-    
     .gridContainer{
         grid-template-areas: 
         "imagen imagen imagen imagen imagen"
@@ -324,6 +320,103 @@ a{ /* Estilo general de los links */
 
 }
 
+@media screen and (min-width: 798px) and (max-width: 993px) {
+
+    .barraAnim a {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /*-----INDEX-----*/
+        
+        .gridContainer{
+            grid-template-areas: 
+            "imagen imagen imagen imagen imagen"
+            "navi navi navi navi navi"
+            "caja1 caja1 caja1 caja1 caja1"
+            "caja2 caja2 caja2 caja2 caja2"
+            "foot foot foot foot foot"
+            ;
+        }
+    
+        .imagen{
+            grid-area: imagen;
+        }
+    
+        .navi{
+            grid-area: navi;
+        }
+    
+        .caja1{
+            grid-area: caja1;
+        }
+        
+        .caja2{
+            grid-area: caja2;
+        }
+    
+        .foot{
+            grid-area: foot;
+        }
+    
+    
+    /*-----ACERCA DE-----*/
+        .gridContainerAD{
+            grid-template-areas: 
+            "imagen imagen imagen imagen imagen"
+            "navi navi navi navi navi"
+            "sect1 sect1 sect1 sect1 sect1"
+            "sect2 sect2 sect2 sect2 sect2"
+            "sect3 sect3 sect3 sect3 sect3"
+            "foot foot foot foot foot"
+            ;
+        }
+    
+        .imagen{
+            grid-area: imagen;
+        }
+    
+        .navi{
+            grid-area: navi;
+        }
+    
+        .sect1{
+            grid-area: sect1;
+        }
+    
+        .sect2{
+            grid-area: sect2;
+        }
+    
+        .sect3{
+            grid-area: sect3;
+        }
+    
+        .contenido{
+            margin-top: 10px;
+        }
+    
+        .contenidoArticulo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 3rem;
+            border: 1px solid white;
+            border-radius: 50px;
+            margin-bottom: 5px;
+            }
+    
+        .menuImagenes{
+            margin-left: 50px;
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+            border-radius: 50px;
+        }
+    }
+
+
+
 @media screen and (min-width: 994px) {
 
 /*-----INDEX-----*/
@@ -389,6 +482,10 @@ a{ /* Estilo general de los links */
 
     .sect3{
         grid-area: sect3;
+    }
+
+    .contenido{
+        margin-top: 10px;
     }
 
     .contenidoArticulo{
