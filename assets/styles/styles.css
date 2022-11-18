@@ -17,13 +17,11 @@ a{ /* Estilo general de los links */
 }
 
 /*-----HEADER/FOOTER------*/
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 0rem;
-}
+} */
 
-.navi{
-    margin-bottom: 10px;
-}
+
 
 .headerImagen{
     width: 100%;
@@ -41,28 +39,17 @@ a{ /* Estilo general de los links */
     width: 100px;
 }
 
-.navList{
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
+
+.navColor{
     background-color: rgb(74, 132, 134);
 }
 
-.navItem{
-    display: inline-block;
-    margin: 0px 0px;
-}
 
-.navLink{
+.nav-item{
     color: wheat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 230px;
 }
 
-.navItem:hover{
+.navH:hover{
     background-color: white;
 }
 
@@ -91,7 +78,7 @@ a{ /* Estilo general de los links */
 
 .barraAnim a {
     position: relative;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .barraAnim a::before {
@@ -240,7 +227,12 @@ a{ /* Estilo general de los links */
     font-size: 2rem;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width: 797px){
+
+    .barraAnim a {
+        padding: 10px;
+        width: 100%;
+    }
 
     /*-----INDEX-----*/
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -332,13 +324,9 @@ a{ /* Estilo general de los links */
 
 }
 
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 994px) {
 
 /*-----INDEX-----*/
-
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        --bs-gutter-x: 0rem;
-    }
     
     .gridContainer{
         grid-template-areas: 
@@ -421,7 +409,6 @@ a{ /* Estilo general de los links */
         border-radius: 50px;
     }
 }
-
 
 .margen{
     margin: 2rem 3rem;
