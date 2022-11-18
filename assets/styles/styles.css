@@ -123,6 +123,11 @@ a{ /* Estilo general de los links */
     display: grid;
 }
 
+.video{
+    height: 315px;
+    width: 560px;
+}
+
 /* Animacion para titulo principal */
 
 .bienvenida{
@@ -422,10 +427,7 @@ a{ /* Estilo general de los links */
     margin: 2rem 3rem;
 }
 
-.video{
-    height: 315px;
-    width: 560px;
-}
+
 
 .gridContainerAD{
     display: grid;
