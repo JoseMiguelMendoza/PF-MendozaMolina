@@ -318,6 +318,11 @@ a{ /* Estilo general de los links */
         border-radius: 50px;
     }
 
+
+    /*-----CONTACTO-----*/
+
+
+
 }
 
 @media screen and (min-width: 798px) and (max-width: 993px) {
@@ -520,62 +525,33 @@ a{ /* Estilo general de los links */
 
 /*-----CONTACTO-----*/
 
-.contactoFormulario{
-    display: flex;
-    width: 90%;
-    margin-top: 40px;
-    margin-left: 450px;
-}
 .contactoCaja{
-    width: 40%;
-    height: 80%;
+    width: 70%;
     border-radius: 10px;
     background-color: rgb(74, 132, 134);
     border: 1px solid rgb(0, 0, 0);
 }
 
-.contactoLegend{
-    margin-left: 20px;
-}
-
-.contactoLabel{
-    margin: 0px 0px 0px 12px;
-}
-
-.contactoAsunto{
-    margin-right: 5px;
-}
-
 .contactoInput{
-    height: 30px;
-    border: 1px solid rgb(0, 0, 0);
-    width: 220px;
-    margin: 3px 3px;
-    border-radius: 1rem;
     transition: 0.3s;
 }
 
 .contactoInput:focus {
     outline-color: #e8e8e8;
     background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #c5c5c5,
+    box-shadow: inset 20px 20px 60px #e6e6e6,
     inset -20px -20px 60px #ffffff;
     transition: 0.3s;
 }
 
 .contactoAsuntoText{
-    margin: 15px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 1rem;
-    min-width: 490px;
-    font-family: sans-serif;
     transition: 0.3s;
 }
 
 .contactoAsuntoText:focus {
     outline-color: #e8e8e8;
     background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #c5c5c5,
+    box-shadow: inset 20px 20px 60px #e6e6e6,
     inset -20px -20px 60px #ffffff;
     transition: 0.3s;
 }
@@ -594,7 +570,6 @@ a{ /* Estilo general de los links */
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-left: 190px;
     margin-bottom: 20px;
 }
 
