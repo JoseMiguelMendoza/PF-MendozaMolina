@@ -357,6 +357,38 @@ a{ /* Estilo general de los links */
         grid-column: 1/2;
         justify-self: center;
     }
+
+/*-----SUCURSALES-----*/
+    .sucursalTitulo{
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px;
+    }
+    .seccionCaja{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-color: wheat;
+    }
+
+    .seccionTitulo{
+        font-size: 1.5rem;
+        font-style: bold;
+    }
+
+    .seccionImagen{
+        display: flex;
+        flex-wrap: wrap;
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        border-radius: 50px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 993px) {
@@ -491,8 +523,38 @@ a{ /* Estilo general de los links */
         grid-column: 2/3;
         justify-self: center;
     }
-}
 
+/*-----SUCURSALES-----*/
+    .sucursalTitulo{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .seccionCaja{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3rem;
+        border: 1px solid white;
+        border-radius: 50px;
+        margin-bottom: 5px;
+        background-color: wheat;
+    }
+
+    .seccionTitulo{
+        font-size: 1.5rem;
+        font-style: bold;
+    }
+
+    .seccionImagen{
+        margin-left: 50px;
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 50px;
+    }
+
+}
 
 
 @media screen and (min-width: 994px) {
@@ -623,6 +685,36 @@ a{ /* Estilo general de los links */
         grid-column: 3/4;
         justify-self: center;
     }
+
+/*-----SUCURSALES-----*/
+.sucursalTitulo{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.seccionCaja{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border: 2px solid wheat;
+    border-radius: 30px;
+    background-color: wheat;
+
+}
+
+.seccionTitulo{
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+.seccionImagen{
+    margin-left: 50px;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+}
+
 }
 
 .margen{
@@ -697,31 +789,21 @@ a{ /* Estilo general de los links */
     transform: translateY(-1px);
 }
 
-/*-----SUCURSALES-----*/
-
-.seccionCaja{
+/*-----SURCURSAL-----*/
+/* .sucursalTitulo{
     display: flex;
-    align-items: left;
-    padding: 2rem;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: white;
+    justify-content: center;
+    margin: 20px 0;
+} */
+
+.sucursalParrafo{
+    margin: 0px 40px;
 
 }
 
-.seccionTitulo{
-    font-size: 1.5rem;
-    font-style: bold;
+.sucursalSubtitulo{
+    margin: 10px 40px;
 }
-
-.seccionImagen{
-    width: 200px;
-    height: 250px;
-    border-radius: 10%;
-    object-fit: cover;
-    margin-left: 30px;
-}
-
 /*-----PRECIOS-----*/
 
 .precioCards{

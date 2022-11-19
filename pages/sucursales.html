@@ -4,207 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="shortcut icon" href="../assets/images/ramo.jfif" type="image/x-icon">
     <title>Sucursales</title>
 </head>
 <body>
-    <header>
-        <div>
-            <picture>
-                <img class="headerImagen" src="../assets/images/prado2.png" alt="Prado con flores">
-            </picture>
-            <nav>
-                <ul class="navList">
-                    <li class="navItem"><a class="navLink" href="../index.html">Home</a></li>
-                    <li class="navItem"><a class="navLink" href="../pages/acercade.html">Acerca de</a></li>
-                    <li class="navItem"><a class="navLink" href="../pages/precios.html">Precios</a></li>
-                    <li class="navItem"><a class="navLink pagActual" href="../pages/sucursales.html">Sucursales</a></li>
-                    <li class="navItem"><a class="navLink" href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+    <div class="flexContent">
+        <picture class="imagen">
+            <img class="headerImagen" src="../assets/images/prado2.png" alt="Prado con flores">
+        </picture>
+        <header class="navi barraAnim">
+            <nav class="navbar navbar-expand-lg navColor flexContent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav justify-content-center">
+                            <a class="nav-item navH nav-link col-md-6 text-center" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center" href="../pages/acercade.html">Acerca de</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center" href="../pages/precios.html">Precios</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center pagActual" href="../pages/sucursales.html">Sucursales</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center" href="../pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <h1 class="contenido">¡Tenemos sucursales en casi toda la Argentina!</h2>
-        <p class="contenido">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam voluptatum neque ipsum. Dolor recusandae impedit quia veritatis consectetur facere ullam laborum vel animi, reprehenderit expedita dolore eius illum alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate deserunt, soluta temporibus alias, fugit accusantium unde, aut quo suscipit fuga corrupti cupiditate possimus consequatur optio? Doloribus dignissimos cupiditate reiciendis.
-        </p>
-        <h2 class="contenido">He aqui varias de nuestras sucursales:</h2>
+        <main>
+            <h1 class="sucursalTitulo">¡Tenemos sucursales en casi toda la Argentina!</h2>
+            <p class="sucursalParrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam voluptatum neque ipsum. Dolor recusandae impedit quia veritatis consectetur facere ullam laborum vel animi, reprehenderit expedita dolore eius illum alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate deserunt, soluta temporibus alias, fugit accusantium unde, aut quo suscipit fuga corrupti cupiditate possimus consequatur optio? Doloribus dignissimos cupiditate reiciendis.
+            </p>
+            <h2 class="sucursalSubtitulo">He aqui varias de nuestras sucursales:</h2>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Buenos Aires</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae laudantium magnam quae consequatur. Repellat illum, voluptatibus culpa ut exercitationem nemo cupiditate nulla dolor omnis, totam, alias nesciunt officia eveniet.
-                    Perferendis modi dignissimos ratione iure esse saepe reprehenderit quaerat, voluptatum provident sit eaque aliquid, voluptas mollitia, voluptates doloribus vel doloremque ad. Quisquam sed dolorum laboriosam, facilis saepe eos sint dolorem.
-                    Aperiam commodi consequatur quaerat illum.
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en Buenos Aires</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae laudantium magnam quae consequatur. Repellat illum, voluptatibus culpa ut exercitationem nemo cupiditate nulla dolor omnis, totam, alias nesciunt officia eveniet.
+                        Perferendis modi dignissimos ratione iure esse saepe reprehenderit quaerat, voluptatum provident sit eaque aliquid, voluptas mollitia, voluptates doloribus vel doloremque ad. Quisquam sed dolorum laboriosam, facilis saepe eos sint dolorem.
+                        Aperiam commodi consequatur quaerat illum.
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria.jfif" alt="floreriaEnBuenosAires">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria.jfif" alt="floreriaEnBuenosAires">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Santa Fe</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sequi reiciendis aperiam porro quos autem sit earum error est blanditiis magnam nemo similique explicabo perferendis accusantium corrupti temporibus ad consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis asperiores eligendi voluptatum dolor. Non dolor repudiandae libero, expedita aut debitis facere atque autem quos praesentium velit doloremque aperiam cum sint?
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en Santa Fe</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sequi reiciendis aperiam porro quos autem sit earum error est blanditiis magnam nemo similique explicabo perferendis accusantium corrupti temporibus ad consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis asperiores eligendi voluptatum dolor. Non dolor repudiandae libero, expedita aut debitis facere atque autem quos praesentium velit doloremque aperiam cum sint?
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria2.jfif" alt="floreriaEnSantaFe">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria2.jfif" alt="floreriaEnSantaFe">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Cordoba</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam ullam aliquid hic, quaerat pariatur delectus ad error, earum, illum harum soluta qui voluptatum aut laboriosam aspernatur ut ea itaque?
-                        Obcaecati sapiente dolore ea quasi, nemo aut deserunt quisquam veniam fugiat explicabo dolorem! Voluptates fugiat nulla delectus facilis error mollitia sint unde similique accusamus provident, corrupti voluptas? Explicabo, nostrum dignissimos.
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en Cordoba</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam ullam aliquid hic, quaerat pariatur delectus ad error, earum, illum harum soluta qui voluptatum aut laboriosam aspernatur ut ea itaque?
+                            Obcaecati sapiente dolore ea quasi, nemo aut deserunt quisquam veniam fugiat explicabo dolorem! Voluptates fugiat nulla delectus facilis error mollitia sint unde similique accusamus provident, corrupti voluptas? Explicabo, nostrum dignissimos.
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria3.jfif" alt="floreriaEnCordoba">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria3.jfif" alt="floreriaEnCordoba">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en San Juan</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi repellat quae non numquam ex fugit animi vel in at, eaque minima saepe modi. Qui porro totam provident perferendis expedita?
-                        Non excepturi provident suscipit repellendus nisi, modi natus atque, magnam veritatis delectus, fuga vitae! Quis quibusdam ratione accusantium aliquam quos quas vel facere totam minus, ipsa doloribus dolore eligendi cumque!
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en San Juan</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi repellat quae non numquam ex fugit animi vel in at, eaque minima saepe modi. Qui porro totam provident perferendis expedita?
+                            Non excepturi provident suscipit repellendus nisi, modi natus atque, magnam veritatis delectus, fuga vitae! Quis quibusdam ratione accusantium aliquam quos quas vel facere totam minus, ipsa doloribus dolore eligendi cumque!
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria4.jpg" alt="floreriaEnSanJuan">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria4.jpg" alt="floreriaEnSanJuan">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Chaco</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta rem tenetur ex voluptatem. Quod, sequi reiciendis. Molestiae ipsa facilis facere aut non, accusamus eius ad possimus aliquid, laudantium deleniti?
-                    Dicta nostrum deserunt placeat minima vel esse recusandae ratione excepturi perspiciatis a harum deleniti rem nemo nobis, quas aperiam quod necessitatibus unde cumque delectus odit. Atque aliquam aspernatur deleniti doloremque?
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en Chaco</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta rem tenetur ex voluptatem. Quod, sequi reiciendis. Molestiae ipsa facilis facere aut non, accusamus eius ad possimus aliquid, laudantium deleniti?
+                        Dicta nostrum deserunt placeat minima vel esse recusandae ratione excepturi perspiciatis a harum deleniti rem nemo nobis, quas aperiam quod necessitatibus unde cumque delectus odit. Atque aliquam aspernatur deleniti doloremque?
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria5.jfif" alt="floreriaEnChaco">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria5.jfif" alt="floreriaEnChaco">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en San Luis</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga optio quam impedit eos aspernatur in itaque earum inventore nihil consectetur neque autem minima ipsam eum, deserunt eveniet! Saepe, tenetur.
-                        Exercitationem sapiente officia libero suscipit, explicabo architecto harum, debitis quasi doloribus sit aliquam tenetur et asperiores ipsa vel tempora adipisci at. Eligendi voluptatibus eum magnam, pariatur voluptates voluptate assumenda nam?
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en San Luis</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga optio quam impedit eos aspernatur in itaque earum inventore nihil consectetur neque autem minima ipsam eum, deserunt eveniet! Saepe, tenetur.
+                            Exercitationem sapiente officia libero suscipit, explicabo architecto harum, debitis quasi doloribus sit aliquam tenetur et asperiores ipsa vel tempora adipisci at. Eligendi voluptatibus eum magnam, pariatur voluptates voluptate assumenda nam?
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria6.jpg" alt="floreriaEnSanLuis">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria6.jpg" alt="floreriaEnSanLuis">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Formosa</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit animi unde fuga vitae sit illo est, iusto, aperiam officiis ad ea iste corporis alias quas, expedita quis facilis veritatis.
-                        Accusamus quae nesciunt aut necessitatibus blanditiis modi placeat saepe, eius reiciendis, eaque dolorem cumque qui sequi similique aperiam nam quas ad ducimus facere id, maiores perspiciatis quaerat quidem. Unde, corporis.
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en Formosa</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit animi unde fuga vitae sit illo est, iusto, aperiam officiis ad ea iste corporis alias quas, expedita quis facilis veritatis.
+                            Accusamus quae nesciunt aut necessitatibus blanditiis modi placeat saepe, eius reiciendis, eaque dolorem cumque qui sequi similique aperiam nam quas ad ducimus facere id, maiores perspiciatis quaerat quidem. Unde, corporis.
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria7.jfif" alt="floreriaEnFormosa">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria7.jfif" alt="floreriaEnFormosa">
-                    </picture>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
 
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Santa Cruz</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut est placeat, amet dignissimos voluptatibus rem distinctio culpa nulla reprehenderit corrupti, vel enim nam architecto. Soluta quod labore dolorum maiores.
-                        Doloremque iste aut exercitationem sequi odio, autem necessitatibus omnis, vitae itaque quasi dolores ipsa! Veritatis necessitatibus vel culpa unde fugit aspernatur accusantium aut! Impedit, accusantium consequuntur. Error cumque eum perferendis.
-                    </p>
+            <section class="contenido">
+                <article class="articulo">
+                    <div class="seccionCaja">
+                        <div>
+                        <h2 class="seccionTitulo">Sucursal en Santa Cruz</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut est placeat, amet dignissimos voluptatibus rem distinctio culpa nulla reprehenderit corrupti, vel enim nam architecto. Soluta quod labore dolorum maiores.
+                            Doloremque iste aut exercitationem sequi odio, autem necessitatibus omnis, vitae itaque quasi dolores ipsa! Veritatis necessitatibus vel culpa unde fugit aspernatur accusantium aut! Impedit, accusantium consequuntur. Error cumque eum perferendis.
+                        </p>
+                        </div>
+                        <picture>
+                            <img class="seccionImagen" src="../assets/images/floreria8.jpg" alt="floreriaEnSantaCruz">
+                        </picture>
                     </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria8.jpg" alt="floreriaEnSantaCruz">
-                    </picture>
-                </div>
-            </article>
-        </section>
-
-        <!-- <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Rio Negro</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat. Saepe libero vel sed recusandae rem. Sunt voluptatibus vero accusamus? Reiciendis officia magnam, sequi praesentium voluptatum minima ex consectetur architecto?
-                        Sit labore ratione modi maxime animi quia temporibus dicta mollitia eos ipsam, ipsa necessitatibus eveniet perspiciatis aperiam eaque repellat dolores id quis accusamus possimus qui facere voluptatum placeat? Voluptas, facilis.
-                    </p>
-                    </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria9.jpg" alt="floreriaEnRioNegro">
-                    </picture>
-                </div>
-            </article>
-        </section>
-
-        <section class="contenido">
-            <article class="articulo">
-                <div class="seccionCaja">
-                    <div>
-                    <h2 class="seccionTitulo">Sucursal en Santiago del Estero</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, obcaecati unde repudiandae amet officiis temporibus similique iusto, nostrum vero iste reiciendis perspiciatis architecto velit illum commodi voluptatum quod excepturi placeat.
-                        Laboriosam, nam asperiores nesciunt quas mollitia praesentium excepturi quam provident delectus. Repudiandae impedit deserunt corrupti iusto saepe culpa numquam quo, nihil tempora maiores, expedita provident dolores eum voluptatibus, eos in.
-                    </p>
-                    </div>
-                    <picture>
-                        <img class="seccionImagen" src="../assets/images/floreria10.jpg" alt="floreriaEnSantiagoDelEstero">
-                    </picture> -->
-                    <!-- Pienso SACAR SANTIAGO DEL ESTERO Y RIO NEGRO -->
-                </div>
-            </article>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <p class="footerTexto">¡Gracias por visitarnos!</p>
-    </footer>
+                </article>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p class="footerTexto">¡Gracias por visitarnos!</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
