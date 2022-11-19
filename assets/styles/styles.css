@@ -318,14 +318,48 @@ a{ /* Estilo general de los links */
         border-radius: 50px;
     }
 
+    /*-----PRECIOS-----*/
 
-    /*-----CONTACTO-----*/
+    .precioCards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin-top: 20px;
+        row-gap: 20px;
 
+    }
 
+    .precioTarjeta:nth-of-type(1){
+        grid-column: 1/2;
+        justify-self: center;
+    }
 
+    .precioTarjeta:nth-of-type(2){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(3){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(4){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(5){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(6){
+        grid-column: 1/2;
+        justify-self: center;
+    }
 }
 
-@media screen and (min-width: 798px) and (max-width: 993px) {
+@media screen and (min-width: 768px) and (max-width: 993px) {
 
     .barraAnim a {
         padding: 10px;
@@ -333,92 +367,131 @@ a{ /* Estilo general de los links */
     }
 
     /*-----INDEX-----*/
-        
-        .gridContainer{
-            grid-template-areas: 
-            "imagen imagen imagen imagen imagen"
-            "navi navi navi navi navi"
-            "caja1 caja1 caja1 caja1 caja1"
-            "caja2 caja2 caja2 caja2 caja2"
-            "foot foot foot foot foot"
-            ;
-        }
     
-        .imagen{
-            grid-area: imagen;
-        }
-    
-        .navi{
-            grid-area: navi;
-        }
-    
-        .caja1{
-            grid-area: caja1;
-        }
-        
-        .caja2{
-            grid-area: caja2;
-        }
-    
-        .foot{
-            grid-area: foot;
-        }
-    
-    
-    /*-----ACERCA DE-----*/
-        .gridContainerAD{
-            grid-template-areas: 
-            "imagen imagen imagen imagen imagen"
-            "navi navi navi navi navi"
-            "sect1 sect1 sect1 sect1 sect1"
-            "sect2 sect2 sect2 sect2 sect2"
-            "sect3 sect3 sect3 sect3 sect3"
-            "foot foot foot foot foot"
-            ;
-        }
-    
-        .imagen{
-            grid-area: imagen;
-        }
-    
-        .navi{
-            grid-area: navi;
-        }
-    
-        .sect1{
-            grid-area: sect1;
-        }
-    
-        .sect2{
-            grid-area: sect2;
-        }
-    
-        .sect3{
-            grid-area: sect3;
-        }
-    
-        .contenido{
-            margin-top: 10px;
-        }
-    
-        .contenidoArticulo{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 3rem;
-            border: 1px solid white;
-            border-radius: 50px;
-            margin-bottom: 5px;
-            }
-    
-        .menuImagenes{
-            margin-left: 50px;
-            object-fit: cover;
-            height: 200px;
-            width: 200px;
-            border-radius: 50px;
-        }
+    .gridContainer{
+        grid-template-areas: 
+        "imagen imagen imagen imagen imagen"
+        "navi navi navi navi navi"
+        "caja1 caja1 caja1 caja1 caja1"
+        "caja2 caja2 caja2 caja2 caja2"
+        "foot foot foot foot foot"
+        ;
     }
+
+    .imagen{
+        grid-area: imagen;
+    }
+
+    .navi{
+        grid-area: navi;
+    }
+
+    .caja1{
+        grid-area: caja1;
+    }
+    
+    .caja2{
+        grid-area: caja2;
+    }
+
+    .foot{
+        grid-area: foot;
+    }
+
+
+    /*-----ACERCA DE-----*/
+    .gridContainerAD{
+        grid-template-areas: 
+        "imagen imagen imagen imagen imagen"
+        "navi navi navi navi navi"
+        "sect1 sect1 sect1 sect1 sect1"
+        "sect2 sect2 sect2 sect2 sect2"
+        "sect3 sect3 sect3 sect3 sect3"
+        "foot foot foot foot foot"
+        ;
+    }
+
+    .imagen{
+        grid-area: imagen;
+    }
+
+    .navi{
+        grid-area: navi;
+    }
+
+    .sect1{
+        grid-area: sect1;
+    }
+
+    .sect2{
+        grid-area: sect2;
+    }
+
+    .sect3{
+        grid-area: sect3;
+    }
+
+    .contenido{
+        margin-top: 10px;
+    }
+
+    .contenidoArticulo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3rem;
+        border: 1px solid white;
+        border-radius: 50px;
+        margin-bottom: 5px;
+        }
+
+    .menuImagenes{
+        margin-left: 50px;
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 50px;
+    }
+
+/*-----PRECIOS-----*/
+
+    .precioCards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 20px;
+        row-gap: 20px;
+    }
+
+    .precioTarjeta:nth-of-type(1){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(2){
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(3){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(4){
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(5){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(6){
+        grid-column: 2/3;
+        justify-self: center;
+    }
+}
 
 
 
@@ -509,6 +582,46 @@ a{ /* Estilo general de los links */
         height: 200px;
         width: 200px;
         border-radius: 50px;
+    }
+
+/*-----PRECIOS-----*/
+
+    .precioCards{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 30px;
+        row-gap: 30px;
+
+    }
+
+    .precioTarjeta:nth-of-type(1){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(2){
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(3){
+        grid-column: 3/4;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(4){
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(5){
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    .precioTarjeta:nth-of-type(6){
+        grid-column: 3/4;
+        justify-self: center;
     }
 }
 
@@ -611,48 +724,6 @@ a{ /* Estilo general de los links */
 
 /*-----PRECIOS-----*/
 
-.tabla{
-    width: 90%;
-    margin: 3rem 4rem;
-    border: 5px solid white;
-    border-radius: 10px;
-
-}
-
-.mainStrong{
-    font-size: large;
-    text-decoration-color: white;
-    margin-left: 4rem;
-}
-
-.tablaCabeza{
-    background-color: white;
-    width: auto;
-    height: 35px;
-}
-
-.tablaColDescripcion{
-    width: 50%;
-}
-
-.tablaColPrecio{
-    width: 30%;
-}
-
-.tablaPrecioTexto{
-    text-align: center;
-}
-
-.tablaDescripcionTexto{
-    display: flex;
-    padding: 0.5rem;
-    margin-top: 60px;
-}
-
-.tablaImagen{
-    width: 300px;
-    height: 250px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
+.precioCards{
+    display: grid;
 }

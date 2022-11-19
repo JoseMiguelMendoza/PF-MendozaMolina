@@ -4,105 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="shortcut icon" href="../assets/images/ramo.jfif" type="image/x-icon">
     <title>Precios</title>
 </head>
 <body>
-    <header>
-        <div>
-            <picture>
-                <img class="headerImagen" src="../assets/images/prado2.png" alt="Prado con flores">
-            </picture>
-            <nav>
-                <ul class="navList">
-                    <li class="navItem"><a class="navLink" href="../index.html">Home</a></li>
-                    <li class="navItem"><a class="navLink" href="../pages/acercade.html">Acerca de</a></li>
-                    <li class="navItem"><a class="navLink pagActual" href="../pages/precios.html">Precios</a></li>
-                    <li class="navItem"><a class="navLink" href="../pages/sucursales.html">Sucursales</a></li>
-                    <li class="navItem"><a class="navLink" href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+    <div class="flexContent">
+        <picture class="imagen">
+            <img class="headerImagen" src="../assets/images/prado2.png" alt="Prado con flores">
+        </picture>
+        <header class="navi barraAnim">
+            <nav class="navbar navbar-expand-lg navColor flexContent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav justify-content-center">
+                            <a class="nav-item navH nav-link col-md-6 text-center" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center" href="../pages/acercade.html">Acerca de</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center pagActual" href="../pages/precios.html">Precios</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center" href="../pages/sucursales.html">Sucursales</a>
+                            <a class="nav-item navH nav-link col-md-6 text-center" href="../pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <table class="tabla">
-            <div>
-            <thead>
-                <tr class="tablaCabeza">
-                    <th>Tipo de flor</th>
-                    <th class="tablaColDescripcion">Descripción</th>
-                    <th class="tablaColPrecio">Precio</th>
-                </tr>
-            </thead>
+        <main class="line precioCards">
+            <div class="lineUp precioTarjeta card" style="width: 18rem;">
+                <img src="../assets/images/florceibo.jpg" class="lineUp card-img-top" style="height: 214px;" alt="flor-ceibo">
+                <div class="lineUp card-body">
+                    <h5 class="card-title lineUp">Flor ceibo</h5>
+                    <p class="card-text lineUp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="lineUp btn btn-primary">$1500</a>
+                </div>
             </div>
-            <tbody>
-                <tr>
-                    <td>
-                        <picture>
-                            <img class="tablaImagen" src="../assets/images/florceibo.jpg" alt="FlorCeibo">
-                        </picture>
-                    </td>
-                    <td class="tablaDescripcionTexto">Flor ceibo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid architecto nam necessitatibus voluptates, iusto ullam perferendis ab excepturi sint praesentium dolorum blanditiis alias laboriosam, eius ut labore obcaecati neque.</td>
-                    <td class="tablaPrecioTexto">1500$</td>
-                </tr>
-                <tr>
-                    <td>
-                        <picture>
-                            <img class="tablaImagen" src="../assets/images/florombu.jfif" alt="FlorOmbu">
-                        </picture>
-                    </td>
-                    <td class="tablaDescripcionTexto">Flor ombu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid architecto nam necessitatibus voluptates, iusto ullam perferendis ab excepturi sint praesentium dolorum blanditiis alias laboriosam, eius ut labore obcaecati neque.</td>
-                    <td class="tablaPrecioTexto">1400$</td>
-                </tr>
-                <tr>
-                    <td>
-                        <picture>
-                            <img class="tablaImagen" src="../assets/images/florfucsia.JPG" alt="FlorFucsia">
-                        </picture>
-                    </td>
-                    <td class="tablaDescripcionTexto">Flor fucsia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid architecto nam necessitatibus voluptates, iusto ullam perferendis ab excepturi sint praesentium dolorum blanditiis alias laboriosam, eius ut labore obcaecati neque.</td>
-                    <td class="tablaPrecioTexto">1800$</td>
-                </tr>
-                <tr>
-                    <td>
-                        <picture>
-                            <img class="tablaImagen" src="../assets/images/flormargarita.jfif" alt="Margarita">
-                        </picture>
-                    </td>
-                    <td class="tablaDescripcionTexto">Margarita Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid architecto nam necessitatibus voluptates, iusto ullam perferendis ab excepturi sint praesentium dolorum blanditiis alias laboriosam, eius ut labore obcaecati neque.</td>
-                    <td class="tablaPrecioTexto">1400$</td>
-                </tr>
-                <tr>
-                    <td>
-                        <picture>
-                            <img class="tablaImagen" src="../assets/images/florseneciopul.jpg" alt="SenecioPulcher">
-                        </picture>
-                    </td>
-                    <td class="tablaDescripcionTexto">Senecio Pulcher Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid architecto nam necessitatibus voluptates, iusto ullam perferendis ab excepturi sint praesentium dolorum blanditiis alias laboriosam, eius ut labore obcaecati neque.</td>
-                    <td class="tablaPrecioTexto">1700$</td>
-                </tr>
-                <tr>
-                    <td>
-                        <picture>
-                            <img class="tablaImagen" src="../assets/images/flortulipan.jfif" alt="FlorTulipan">
-                        </picture>
-                    </td>
-                    <td class="tablaDescripcionTexto">Tulipanes Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid architecto nam necessitatibus voluptates, iusto ullam perferendis ab excepturi sint praesentium dolorum blanditiis alias laboriosam, eius ut labore obcaecati neque.</td>
-                    <td class="tablaPrecioTexto">1300$</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>
-            <strong class="mainStrong">Cuando quieras ordenar algun conjunto, puedes contactarte con nosotros!</strong> 
-        </p>
-    </main>
-    
-    <footer class="footer">
-        <p class="footerTexto">¡Gracias por visitarnos!</p>
-    </footer>
-    <link rel="stylesheet" href="../assets/js/bootstrap.bundle.min.js">
+            <div class="lineUp precioTarjeta card" style="width: 18rem;">
+                <img src="../assets/images/florombu.jfif" class="lineUp card-img-top" alt="flor-ombu">
+                <div class="card-body lineUp">
+                    <h5 class="lineUp card-title">Flor Ombu</h5>
+                    <p class="lineUp card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="lineUp btn btn-primary">$1400</a>
+                </div>
+            </div>
+            <div class="lineUp precioTarjeta card" style="width: 18rem;">
+                <img src="../assets/images/florfucsia.JPG" class="lineUp card-img-top" alt="flor-fucsia">
+                <div class="card-body">
+                    <h5 class="lineUp card-title">Flor Fucsia</h5>
+                    <p class="lineUp card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="lineUp btn btn-primary">$1800</a>
+                </div>
+            </div>
+            <div class="lineUp precioTarjeta card" style="width: 18rem;">
+                <img src="../assets/images/flormargarita.jfif" class="lineUp card-img-top" alt="margarita">
+                <div class="lineUp card-body">
+                    <h5 class="lineUp card-title">Margaritas</h5>
+                    <p class="lineUp card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="lineUp btn btn-primary">$1400</a>
+                </div>
+            </div>
+            <div class="lineUp precioTarjeta card" style="width: 18rem;">
+                <img src="../assets/images/florseneciopul.jpg" class="lineUp card-img-top" alt="senecio-pulcher">
+                <div class="lineUp card-body">
+                    <h5 class="lineUp card-title">Senecio Pulcher</h5>
+                    <p class="lineUp card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="lineUp btn btn-primary">$1700</a>
+                </div>
+            </div>
+            <div class="lineUp precioTarjeta card" style="width: 18rem;">
+                <img src="../assets/images/flortulipan.jfif" class="lineUp card-img-top" alt="tulipan">
+                <div class="lineUp card-body">
+                    <h5 class="lineUp card-title">Tulipanes</h5>
+                    <p class="lineUp card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="lineUp btn btn-primary">$1300</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p class="footerTexto">¡Gracias por visitarnos!</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
