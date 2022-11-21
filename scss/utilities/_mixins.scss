@@ -1,7 +1,7 @@
 @import "./variables";
 
-@mixin flex ($flex-direction){
-    display: flex;
+@mixin flex ($display,$flex-direction){
+    display: $display;
     flex-direction: $flex-direction;
 }
 
@@ -9,6 +9,9 @@
     position: $position;
     font-size: $font-size;
 }
+
+
+//ANIMACIONES
 
 @mixin anim-titulo-bienvenida ($font-fam, $position, $color, $text-transf,$class, $anim-time, $anim-delay){
     font-family: $font-fam;
@@ -20,18 +23,23 @@
     animation-delay: $anim-delay;
 }
 
-@mixin anim-flipX($opacity, $rotateX) {
-    0% {
-        opacity: 0;
-        transform: rotateX(90deg);
+@mixin animate-flipX($opacity, $rotateX){
+    .flipX {
+        animation: 3s anim-flipX ease;
     }
-    50% {
-        opacity: $opacity;
-        transform: $rotateX;
-    }
-    100% {
-        opacity: $opacity;
-        transform: $rotateX;
+    @keyframes anim-flipX{
+        0% {
+            opacity: 0;
+            transform: rotateX(90deg);
+        }
+        50% {
+            opacity: $opacity;
+            transform: $rotateX;
+        }
+        100% {
+            opacity: $opacity;
+            transform: $rotateX;
+        }
     }
 }
 
@@ -47,4 +55,34 @@
     transform: scaleX(0);
     transform-origin: $transform-origin;
     transition: $transition;
+}
+
+@mixin line ($width, $flex-wrap, $animation, $opacity-n, $opacity-y, $translateY){
+    .line {
+        width: $width;
+        flex-wrap: $flex-wrap;
+        padding: 0px;
+        &Up {
+            animation: $animation;
+            margin-bottom: 0px;
+        }
+    }
+    
+    @keyframes anim-lineUp {
+        0% {
+        opacity: $opacity-n;
+        transform: $translateY;
+        }
+        20% {
+        opacity: $opacity-n;
+        }
+        50% {
+        opacity: $opacity-y;
+        transform: translateY(0%);
+        }
+        100% {
+        opacity: $opacity-y;
+        transform: translateY(0%);
+        }
+    }
 }

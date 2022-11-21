@@ -8,30 +8,34 @@
 a {
   text-decoration: none; }
 
-.navColor {
-  background-color: #4a8486; }
+body {
+  background-color: cadetblue;
+  font-family: 'Alkalami', sans-serif; }
 
-.nav-item {
-  color: wheat; }
+.gridContainer {
+  display: grid; }
 
-.navH:hover {
-  background-color: white; }
+.gridContainerAD {
+  display: grid; }
+
+.subtitulo {
+  font-style: italic; }
 
 .video {
   height: 315px;
   width: 560px; }
 
-.gridContainer {
-  display: grid; }
+.margen {
+  margin: 2rem 3rem; }
 
-body {
-  background-color: cadetblue;
-  font-family: 'Alkalami', sans-serif; }
+.pagActual {
+  color: #341d49; }
 
-/*-----HEADER/FOOTER------*/
-.headerImagen {
-  width: 100%;
-  object-fit: cover; }
+.navColor {
+  background-color: #4a8486; }
+
+.nav-item {
+  color: wheat; }
 
 .navbar {
   --bs-navbar-padding-y: 0px; }
@@ -40,8 +44,31 @@ body {
     margin-left: 5px;
     width: 100px; }
 
-.pagActual {
-  color: #341d49; }
+.navH:hover {
+  background-color: white; }
+
+.contenido {
+  display: flex;
+  justify-content: center; }
+
+.articulo {
+  width: 90%; }
+
+.contenidoArticuloTitulo {
+  font-size: 2rem; }
+
+.precioCards {
+  display: grid; }
+
+.sucursalParrafo {
+  margin: 0px 40px; }
+
+.sucursalSubtitulo {
+  margin: 10px 40px; }
+
+.headerImagen {
+  width: 100%;
+  object-fit: cover; }
 
 .footer {
   width: 100%;
@@ -76,11 +103,6 @@ body {
 
 .barraAnim a:hover::before {
   transform: scaleX(1); }
-
-/*-----INDEX-----*/
-.flexContent {
-  display: flex;
-  flex-direction: column; }
 
 /* Animacion para titulo principal */
 .bienvenida {
@@ -123,9 +145,6 @@ body {
     opacity: 1;
     transform: translateY(0%); } }
 
-.subtitulo {
-  font-style: italic; }
-
 /*-----ACERCA DE-----*/
 /* Animacion giro en vertical */
 .flipX {
@@ -154,23 +173,13 @@ body {
   100% {
     transform: rotateY(-360deg); } }
 
-.contenido {
-  display: flex;
-  justify-content: center; }
-
-.articulo {
-  width: 90%; }
-
-.contenidoArticuloTitulo {
-  font-size: 2rem; }
-
-@media screen and (max-width: 797px) {
+@media screen and (min-width: 425) and (max-width: 797px) {
   .barraAnim a {
     padding: 10px;
     width: 100%; }
   /*-----INDEX-----*/
   .gridContainer {
-    grid-template-areas: "imagen imagen imagen imagen imagen" "navi navi navi navi navi" "caja1 caja1 caja1 caja1 caja1" "caja2 caja2 caja2 caja2 caja2" "foot foot foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen imagen" "navi navi navi navi navi" "caja1 caja1 caja1 caja1 caja1" "caja2 caja2 caja2 caja2 caja2" "foot foot foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
@@ -441,12 +450,6 @@ body {
     width: 200px;
     border-radius: 50px; } }
 
-.margen {
-  margin: 2rem 3rem; }
-
-.gridContainerAD {
-  display: grid; }
-
 /*-----CONTACTO-----*/
 .contactoCaja {
   width: 70%;
@@ -496,14 +499,3 @@ body {
 
 .button:active {
   transform: translateY(-1px); }
-
-/*-----SURCURSAL-----*/
-.sucursalParrafo {
-  margin: 0px 40px; }
-
-.sucursalSubtitulo {
-  margin: 10px 40px; }
-
-/*-----PRECIOS-----*/
-.precioCards {
-  display: grid; }
