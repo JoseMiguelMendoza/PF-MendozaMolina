@@ -43,7 +43,6 @@
     }
 }
 
-
 @keyframes bienvenida {
     0%,40%,100% {
     transform: translateY(0)
@@ -61,21 +60,8 @@
 /* Animacion giro en vertical */
 @include animate-flipX (1, rotateX(720deg));
 
-/* Animacion giro en horizontal */
-.flipY {
-    animation-name: spin, depth;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-}
-@keyframes spin {
-    0% {
-    transform: rotateY(0deg);
-    }
-    100% {
-    transform: rotateY(-360deg);
-    }
-}
-
+/*Animacion giro en horizontal */
+@include anima-flipY((spin, depth), linear, 1s, rotateY(0deg), rotateY(-360deg));
 
 @media screen and(max-width: 767px){
 

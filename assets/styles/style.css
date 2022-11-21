@@ -210,7 +210,7 @@ body {
     opacity: 1;
     transform: rotateX(720deg); } }
 
-/* Animacion giro en horizontal */
+/*Animacion giro en horizontal */
 .flipY {
   animation-name: spin, depth;
   animation-timing-function: linear;

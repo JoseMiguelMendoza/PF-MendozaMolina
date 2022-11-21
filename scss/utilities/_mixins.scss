@@ -84,3 +84,19 @@
         }
     }
 }
+
+@mixin anima-flipY ($anim-name, $anim-time-func, $anim-duration, $transf-rotY-first, $transf-rotY-last){
+    .flipY {
+        animation-name: $anim-name;
+        animation-timing-function: $anim-time-func;
+        animation-duration: $anim-duration;
+    }
+    @keyframes spin {
+        0% {
+        transform: $transf-rotY-first;
+        }
+        100% {
+        transform: $transf-rotY-last;
+        }
+    }
+}
