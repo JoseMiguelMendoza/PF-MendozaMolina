@@ -38,33 +38,6 @@ body{
     margin: 2rem 3rem;
 }
 
-//BARRA NAV
-.pagActual{
-    color: $pag-actual;
-}
-
-.navColor{
-    background-color: $nav-background-color;
-}
-
-.nav-item{
-    color: $nav-and-box;
-}
-
-.navbar{
-    --bs-navbar-padding-y: 0px;
-    &-toggler {
-        margin-top: 0px;
-        margin-left: 5px;
-        width: 100px;
-    }
-}
-
-.navH:hover{
-    background-color: $nav-hover;
-}
-
-
 //ACERCA DE 
 .contenido{
     display: flex;
@@ -110,6 +83,7 @@ body{
 }
 
 .contactoInput:focus {
+    @extend .contactoInput;
     outline-color: #e8e8e8;
     background: #e8e8e8;
     box-shadow: inset 20px 20px 60px #e6e6e6,
@@ -147,6 +121,7 @@ body{
 }
 
 .button:hover {
+    @extend .button;
     background-color: #23c483;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;

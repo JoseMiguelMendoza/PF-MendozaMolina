@@ -8,8 +8,57 @@
     font-size: $font-size;
 }
 
+@mixin contenidoArticulo($flex-dir,$padding, $border, $bor-radius, $margin-t, $margin-b){
+    .contenidoArticulo{
+        display: flex;
+        flex-direction: $flex-dir;
+        padding: $padding;
+        border: $border;
+        border-radius: $bor-radius;
+        margin-top: $margin-t;
+        margin-bottom: $margin-b;
+        } 
+}
 
-//ANIMACIONES
+@mixin menuImagenes($height, $width, $bor-radius) {
+    .menuImagenes{
+        display: flex;
+        flex-wrap: wrap;
+        object-fit: cover;
+        height: $height;
+        width: $width;
+        border-radius: $bor-radius;
+    }
+}
+
+@mixin precioCards ($grid-tem-col, $grid-tem-row, $margin-t, $row-gap){
+    .precioCards{
+        grid-template-columns: $grid-tem-col;
+        grid-template-rows: $grid-tem-row;
+        margin-top: $margin-t;
+        row-gap: $row-gap;
+    }
+}
+
+@mixin barraAnim ($padding, $width) {
+    .barraAnim a {
+        padding: $padding;
+        width: $width;
+    }
+}
+
+@mixin seccionCaja($align, $padding, $border, $border-rad, $background) {
+    .seccionCaja{
+        display: flex;
+        align-items: $align;
+        padding: $padding;
+        border: $border;
+        border-radius: $border-rad;
+        background-color: $background;
+    }
+}
+
+//MIXIN DE ANIMACIONES
 
 @mixin anim-titulo-bienvenida ($font-fam, $position, $color, $text-transf,$class, $anim-time, $anim-delay){
     font-family: $font-fam;

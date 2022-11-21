@@ -2,3 +2,29 @@
     width: 100%;
     object-fit: cover;
 }
+
+//BARRA NAV
+.pagActual{
+    color: $pag-actual;
+}
+
+.navColor{
+    background-color: $nav-background-color;
+}
+
+.nav-item{
+    color: $nav-and-box;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0px;
+    &-toggler {
+        margin-top: 0px;
+        margin-left: 5px;
+        width: 100px;
+    }
+}
+
+.navH:hover{
+    background-color: $nav-hover;
+}
