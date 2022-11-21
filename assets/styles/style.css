@@ -28,6 +28,9 @@ body {
 .margen {
   margin: 2rem 3rem; }
 
+.h2Padd {
+  padding: 8px 0px; }
+
 .contenido {
   display: flex;
   justify-content: center; }
@@ -59,8 +62,7 @@ body {
 .contactoInput:focus {
   outline-color: #e8e8e8;
   background: #e8e8e8;
-  box-shadow: inset 20px 20px 60px #e6e6e6,
-  inset -20px -20px 60px #ffffff;
+  box-shadow: inset 20px 20px 60px #e6e6e6, inset -20px -20px 60px #ffffff;
   transition: 0.3s; }
 
 .contactoAsuntoText {
@@ -69,8 +71,7 @@ body {
 .contactoAsuntoText:focus {
   outline-color: #e8e8e8;
   background: #e8e8e8;
-  box-shadow: inset 20px 20px 60px #e6e6e6,
-  inset -20px -20px 60px #ffffff;
+  box-shadow: inset 20px 20px 60px #e6e6e6, inset -20px -20px 60px #ffffff;
   transition: 0.3s; }
 
 .button, .button:hover {
@@ -219,11 +220,7 @@ body {
     width: 100%; }
   /*-----INDEX-----*/
   .gridContainer {
-    grid-template-areas: "imagen imagen imagen"
-    "navi navi navi"
-    "caja1 caja1 caja1"
-    "caja2 caja2 caja2"
-    "foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen" "navi navi navi" "caja1 caja1 caja1" "caja2 caja2 caja2" "foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
@@ -236,12 +233,7 @@ body {
     grid-area: foot; }
   /*-----ACERCA DE-----*/
   .gridContainerAD {
-    grid-template-areas: "imagen imagen imagen imagen imagen"
-    "navi navi navi navi navi"
-    "sect1 sect1 sect1 sect1 sect1"
-    "sect2 sect2 sect2 sect2 sect2"
-    "sect3 sect3 sect3 sect3 sect3"
-    "foot foot foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen imagen imagen" "navi navi navi navi navi" "sect1 sect1 sect1 sect1 sect1" "sect2 sect2 sect2 sect2 sect2" "sect3 sect3 sect3 sect3 sect3" "foot foot foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
@@ -322,11 +314,7 @@ body {
     width: 100%; }
   /*-----INDEX-----*/
   .gridContainer {
-    grid-template-areas: "imagen imagen imagen imagen imagen"
-    "navi navi navi navi navi"
-    "caja1 caja1 caja1 caja1 caja1"
-    "caja2 caja2 caja2 caja2 caja2"
-    "foot foot foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen imagen imagen" "navi navi navi navi navi" "caja1 caja1 caja1 caja1 caja1" "caja2 caja2 caja2 caja2 caja2" "foot foot foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
@@ -339,12 +327,7 @@ body {
     grid-area: foot; }
   /*-----ACERCA DE-----*/
   .gridContainerAD {
-    grid-template-areas: "imagen imagen imagen imagen imagen"
-    "navi navi navi navi navi"
-    "sect1 sect1 sect1 sect1 sect1"
-    "sect2 sect2 sect2 sect2 sect2"
-    "sect3 sect3 sect3 sect3 sect3"
-    "foot foot foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen imagen imagen" "navi navi navi navi navi" "sect1 sect1 sect1 sect1 sect1" "sect2 sect2 sect2 sect2 sect2" "sect3 sect3 sect3 sect3 sect3" "foot foot foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
@@ -425,11 +408,7 @@ body {
 @media screen and (min-width: 994px) {
   /*-----INDEX-----*/
   .gridContainer {
-    grid-template-areas: "imagen imagen imagen imagen imagen"
-    "navi navi navi navi navi"
-    "caja1 caja1 caja1 caja1 caja1"
-    "caja2 caja2 caja2 caja2 caja2"
-    "foot foot foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen imagen imagen" "navi navi navi navi navi" "caja1 caja1 caja1 caja1 caja1" "caja2 caja2 caja2 caja2 caja2" "foot foot foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
@@ -442,12 +421,7 @@ body {
     grid-area: foot; }
   /*-----ACERCA DE-----*/
   .gridContainerAD {
-    grid-template-areas: "imagen imagen imagen imagen imagen"
-    "navi navi navi navi navi"
-    "sect1 sect1 sect1 sect1 sect1"
-    "sect2 sect2 sect2 sect2 sect2"
-    "sect3 sect3 sect3 sect3 sect3"
-    "foot foot foot foot foot"; }
+    grid-template-areas: "imagen imagen imagen imagen imagen" "navi navi navi navi navi" "sect1 sect1 sect1 sect1 sect1" "sect2 sect2 sect2 sect2 sect2" "sect3 sect3 sect3 sect3 sect3" "foot foot foot foot foot"; }
   .imagen {
     grid-area: imagen; }
   .navi {
