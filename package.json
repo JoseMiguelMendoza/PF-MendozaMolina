@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "Este es mi proyecto final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/origen.scss assets/styles/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseMiguelMendoza/PreEntrega3-MendozaMolina.git"
+  },
+  "keywords": [
+    "floreria",
+    "tolo",
+    "venta"
+  ],
+  "author": "Mendoza, jose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseMiguelMendoza/PreEntrega3-MendozaMolina/issues"
+  },
+  "homepage": "https://github.com/JoseMiguelMendoza/PreEntrega3-MendozaMolina#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

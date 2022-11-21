@@ -1,19 +1,18 @@
+//ESTILO DE TEXTO
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Raleway&display=swap');
 
+//RESET y Estilos generales
+@import "./utilities/reset";
+
+//VARIABLES
+@import "./utilities/variables";
+
+//MIXINS
+@import "./utilities/mixins";
+
 body{
-    background-color: cadetblue;
+    background-color: $body-color;
     font-family: 'Alkalami', sans-serif;
-}
-
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
-
-a{ /* Estilo general de los links */
-    text-decoration: none;
 }
 
 /*-----HEADER/FOOTER------*/
@@ -26,30 +25,16 @@ a{ /* Estilo general de los links */
 
 .navbar{
     --bs-navbar-padding-y: 0px;
+    &-toggler {
+        margin-top: 0px;
+        margin-left: 5px;
+        width: 100px;
+    }
 }
 
-.navbar-toggler {
-    margin-top: 0px;
-    margin-left: 5px;
-    width: 100px;
-}
-
-
-.navColor{
-    background-color: rgb(74, 132, 134);
-}
-
-
-.nav-item{
-    color: wheat;
-}
-
-.navH:hover{
-    background-color: white;
-}
 
 .pagActual{
-    color: rgb(52, 29, 73);
+    color: $pag-actual;
 }
 
 .footer{
@@ -69,25 +54,12 @@ a{ /* Estilo general de los links */
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.barraAnim a {
-    position: relative;
-    /* padding: 5px; */
-}
-
-.barraAnim a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, red , #ffa500, #ffff00);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
+    & a {
+        position: relative;
+        &::before {
+            @include barra-anim-before(absolute, $gradient-nav, left, transform 0.5s ease-in-out)
+        }
+    }
 }
 
 .barraAnim a:hover::before {
@@ -97,34 +69,18 @@ a{ /* Estilo general de los links */
 /*-----INDEX-----*/
 
 .flexContent{
-    display: flex;
-    flex-direction: column;
+    @include flex (column)
 }
 
-.gridContainer{
-    display: grid;
-}
 
-.video{
-    height: 315px;
-    width: 560px;
-}
 
 /* Animacion para titulo principal */
 
 .bienvenida{
-    position: relative;
-    font-size: 40px;
-}
-.bienvenida span {
-    font-family: 'Alkalami', sans-serif;
-    position: relative;
-    display: inline-block;
-    color: rgb(39, 39, 39);
-    text-transform: none;
-    animation: bienvenida 1.5s;
-    animation-delay: calc(.1s * var(--i));
-    
+    @include bienvenida (relative, 40px)
+    & span {
+        @include anim-titulo-bienvenida(('Alkalami', sans-serif) , relative, $bienvenida-color,none, bienvenida, 1.5s, calc(.1s * var(--i)) )
+    }
 }
 
 @keyframes bienvenida {
@@ -142,16 +98,12 @@ a{ /* Estilo general de los links */
     width: 100%;
     flex-wrap: wrap;
     padding: 0px;
+    &Up {
+        animation: 2s anim-lineUp ease-out;
+        margin-bottom: 0px;
+    }
 }
 
-.lineUp {
-    animation: 2s anim-lineUp ease-out;
-    margin-bottom: 0px;
-}
-
-.subtitulo{
-    font-style: italic;
-}
 @keyframes anim-lineUp {
     0% {
     opacity: 0;
@@ -170,6 +122,10 @@ a{ /* Estilo general de los links */
     }
 }
 
+.subtitulo{
+    font-style: italic;
+}
+
 /*-----ACERCA DE-----*/
 
 /* Animacion giro en vertical */
@@ -177,26 +133,13 @@ a{ /* Estilo general de los links */
     animation: 3s anim-flipX ease;
 }
 @keyframes anim-flipX {
-    0% {
-    opacity: 0;
-    transform: rotateX(90def);
-    }
-    50% {
-    opacity: 1;
-    transform: rotateX(720deg);
-    }
-    100% {
-    /* animate nothing to pause animation at the end */
-    opacity: 1;
-    transform: rotateX(720deg);
-    }
+    @include anim-flipX (1, rotateX(720deg))
 }
 
 /* Animacion giro en horizontal */
 .flipY {
     animation-name: spin, depth;
     animation-timing-function: linear;
-/*   animation-iteration-count: infinite; */
     animation-duration: 1s;
 }
 @keyframes spin {
@@ -785,11 +728,6 @@ a{ /* Estilo general de los links */
 }
 
 /*-----SURCURSAL-----*/
-/* .sucursalTitulo{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-} */
 
 .sucursalParrafo{
     margin: 0px 40px;
