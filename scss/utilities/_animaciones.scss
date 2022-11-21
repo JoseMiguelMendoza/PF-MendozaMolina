@@ -1,0 +1,49 @@
+@import "./variables";
+@import "./mixins";
+
+/* Animacion hover para items del navegador */
+.barraAnim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & a {
+        position: relative;
+        &::before {
+            @include barra-anim-before(absolute, $gradient-nav, left, transform 0.5s ease-in-out)
+        }
+    }
+}
+
+.barraAnim a:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* Animacion para titulo principal */
+
+.bienvenida{
+    @include bienvenida (relative, 40px);
+    & span {
+        @include anim-titulo-bienvenida(('Alkalami', sans-serif) , relative, $bienvenida-color,none, bienvenida, 1.5s, calc(.1s * var(--i)))
+    }
+}
+
+@keyframes bienvenida {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-20px)
+    }
+}
+
+/* Animacion para texto */
+@include line (100%, wrap, 2s anim-lineUp ease-out, 0,1, translateY(80%));
+
+/*-----ACERCA DE-----*/
+
+/* Animacion giro en vertical */
+@include animate-flipX (1, rotateX(720deg));
+
+/*Animacion giro en horizontal */
+@include anima-flipY((spin, depth), linear, 1s, rotateY(0deg), rotateY(-360deg));
