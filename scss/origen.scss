@@ -1,8 +1,8 @@
 //ESTILO DE TEXTO
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Raleway&display=swap');
 
-//RESET y Estilos generales
-@import "./utilities/reset";
+//ESTILOS GENERALES
+@import "./utilities/etiquetas-generales";
 
 //HEADER
 @import "./utilities/header";
@@ -211,7 +211,7 @@
     .sucursalTitulo{
         display: flex;
         justify-content: center;
-        margin: 20px 20px;
+        margin: 20px 40px;
     }
     .seccionCaja{
         display: flex;
@@ -563,66 +563,5 @@
     border-radius: 50px;
 }
 
-}
-
-/*-----CONTACTO-----*/
-
-.contactoCaja{
-    width: 70%;
-    border-radius: 10px;
-    background-color: rgb(74, 132, 134);
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.contactoInput{
-    transition: 0.3s;
-}
-
-.contactoInput:focus {
-    outline-color: #e8e8e8;
-    background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #e6e6e6,
-    inset -20px -20px 60px #ffffff;
-    transition: 0.3s;
-}
-
-.contactoAsuntoText{
-    transition: 0.3s;
-}
-
-.contactoAsuntoText:focus {
-    outline-color: #e8e8e8;
-    background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #e6e6e6,
-    inset -20px -20px 60px #ffffff;
-    transition: 0.3s;
-}
-
-.button{
-    padding: 1.1em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    margin-bottom: 20px;
-}
-
-.button:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-}
-
-.button:active {
-    transform: translateY(-1px);
 }
 
