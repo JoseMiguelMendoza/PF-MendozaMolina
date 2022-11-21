@@ -196,7 +196,7 @@ body {
   object-fit: cover; }
 
 .pagActual {
-  color: #341d49; }
+  color: #341d49 !important; }
 
 .navColor {
   background-color: #4a8486; }
